@@ -133,8 +133,8 @@ class DefaultShipment extends \Magento\Sales\Model\Order\Pdf\Items\Shipment\Defa
         }
 
         $lineBlock = ['lines' => $lines, 'height' => 20];
-
         $page = $pdf->drawLineBlocks($page, [$lineBlock], ['table_header' => true]);
         $this->setPage($page);
     }
 }
+
