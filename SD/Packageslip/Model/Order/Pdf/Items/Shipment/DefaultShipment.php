@@ -66,7 +66,7 @@ class DefaultShipment extends \Magento\Sales\Model\Order\Pdf\Items\Shipment\Defa
         $productid = $item->getProductId();
         
         $product = $this->product->create()->load($productid);
-            $categoriesIds = $product->getCategoryIds();
+        $categoriesIds = $product->getCategoryIds();
 
         $cateName = [];    
         foreach($categoriesIds as $categoryId){
@@ -137,4 +137,5 @@ class DefaultShipment extends \Magento\Sales\Model\Order\Pdf\Items\Shipment\Defa
         $this->setPage($page);
     }
 }
+
 
